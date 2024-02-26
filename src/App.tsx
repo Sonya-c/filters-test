@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     path: "/news",
     element: <NewsPage />
   }
-]);
+], { basename: import.meta.env.DEV ? '/' : '/filters-test/' });
 
 
 function App() {
